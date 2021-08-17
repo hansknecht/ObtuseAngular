@@ -1,0 +1,17 @@
+<H1>{{compHeader}}</H1>
+
+<input type='text' [(ngModel)]='teamFilter' />
+<p>Filter Value: {{teamFilter}}</p>
+<table *ngIf='teams.length'>
+    <tr>
+	<th>ID</th>
+	<th>Name</th>
+	<th>Link</th>
+    </tr>
+    <tr *ngFor="let team of teams">
+	<td>{{team.id}}</td>
+	<td>{{team.name}}</td>
+	<td>{{team.link}}</td>
+    </tr>
+<table>
+
