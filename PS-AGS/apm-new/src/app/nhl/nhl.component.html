@@ -4,13 +4,15 @@
 <p>Filter Value: {{teamFilter}}</p>
 <table *ngIf='teams.length'>
     <tr>
-	<th>ID</th>
 	<th>Name</th>
 	<th>Link</th>
     </tr>
     <tr *ngFor="let team of filteredTeams">
-	<td>{{team.id}}</td>
-	<td>{{team.name}}</td>
+	<td>
+	    <a [routerLink]="['/NhlTeam', team.id]"> 
+	       {{team.name}}
+	    </a>
+	</td>
 	<td>{{team.link}}</td>
     </tr>
 <table>

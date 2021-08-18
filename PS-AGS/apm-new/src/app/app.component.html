@@ -1,2 +1,10 @@
-<H1>NHL Tester</H1>
-<pm-nhl></pm-nhl>
+<nav class='navbar navbar-expand navbar-light bg-light'>
+    <a class='navbar-brand'>{{title}}</a>
+    <ul class='nav navbar-nav'>
+	<li><a class='nav-link' [routerLink]="['/welcome']">Home</a></li>
+	<li><a class='nav-link' [routerLink]="['/NhlTeams']">Nhl Teams</a></li>
+    </ul>
+</nav>
+<div class='container'>
+    <router-outlet></router-outlet>
+</div>

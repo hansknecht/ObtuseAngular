@@ -4,7 +4,6 @@ import { NhlService } from './nhl.service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  selector: 'pm-nhl',
   templateUrl: './nhl.component.html',
   styleUrls: ['./nhl.component.css']
 })
