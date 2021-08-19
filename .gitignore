@@ -65,6 +65,9 @@ typings/
 # Output of 'npm pack'
 *.tgz
 
+# Git swap files
+*.swp
+
 # Yarn Integrity file
 .yarn-integrity
 
