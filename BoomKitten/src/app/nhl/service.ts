@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { Team } from './team';
 import { TeamQuery } from './team-query';
 import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http'

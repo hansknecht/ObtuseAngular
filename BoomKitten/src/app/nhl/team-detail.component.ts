@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NhlService } from './service';
 import { Subscription } from 'rxjs';
 import { Team } from './team';
@@ -17,6 +17,7 @@ export class TeamdetailComponent implements OnInit {
 
   constructor(
       private route: ActivatedRoute,
+      private router: Router,
       private nhlService: NhlService
   ) { }
 
@@ -38,6 +39,10 @@ export class TeamdetailComponent implements OnInit {
 
   findTeam(teamId: number): Team | undefined {
       return this.teams.find(team => team.id == teamId);
+  }
+
+  onBack(): void {
+      this.router.navigate(['/NhlTeams']);
   }
 
 }
