@@ -1,4 +1,4 @@
-import { Venue } from './nhl.venue';
+import { Venue } from './venue';
 
 export interface Team {
     "id": number,

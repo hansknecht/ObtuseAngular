@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { Team } from './nhl.team';
-import { TeamQuery } from './nhl.teamquery';
+import { Team } from './team';
+import { TeamQuery } from './team-query';
 import { Observable, throwError } from 'rxjs';
 import { HttpClient, HttpErrorResponse } from '@angular/common/http'
 import { catchError, tap } from 'rxjs/operators';

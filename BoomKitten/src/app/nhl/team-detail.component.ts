@@ -1,12 +1,12 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
-import { NhlService } from './nhl.service';
+import { NhlService } from './service';
 import { Subscription } from 'rxjs';
-import { Team } from './nhl.team';
+import { Team } from './team';
 
 @Component({
-  templateUrl: './nhl.teamdetail.component.html',
-  styleUrls: ['./nhl.teamdetail.component.css']
+  templateUrl: './team-detail.component.html',
+  styleUrls: ['./team-detail.component.css']
 })
 export class TeamdetailComponent implements OnInit {
     pageTitle: string = 'Team Detail';

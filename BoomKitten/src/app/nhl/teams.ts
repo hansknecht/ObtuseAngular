@@ -1,13 +1,13 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { Team } from './nhl.team';
-import { NhlService } from './nhl.service';
+import { Team } from './team';
+import { NhlService } from './service';
 import { Subscription } from 'rxjs';
 
 @Component({
-  templateUrl: './nhl.component.html',
-  styleUrls: ['./nhl.component.css']
+  templateUrl: './teams.html',
+  styleUrls: ['./teams.css']
 })
-export class NhlComponent implements OnInit, OnDestroy {
+export class TeamsComponent implements OnInit, OnDestroy {
     compHeader: string = "NHL Teams!";
     filteredTeams: Team[] = [];
     teams: Team[] = [];

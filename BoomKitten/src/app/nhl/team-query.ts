@@ -1,4 +1,4 @@
-import { Team } from './nhl.team';
+import { Team } from './team';
 
 export interface TeamQuery {
     "copyright": string,
